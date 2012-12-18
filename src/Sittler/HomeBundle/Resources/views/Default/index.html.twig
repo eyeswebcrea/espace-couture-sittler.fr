@@ -1,0 +1,52 @@
+{% extends "::base.html.twig" %}
+
+{% block bandeau %} 
+{{ parent() }}
+<div class="block block-3-line block-design-sample" id="presentation-home">
+	<div class="block-content">
+		{% for article in boucleArticles({ "idArticle" : 1}) %}
+			{{ article.texte | raw }}
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+	    {% 
+        		stylesheets output='css/mercerie.css' 
+        		'@SittlerHomeBundle/Resources/public/css/index.css'
+        %}        		
+        	<link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+        {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+
+	<div class="span-20 prepend-2 last prepend-top item-list">
+		<div class="block block-4-line span-9 append-1 prepend-top item">
+			{% for rubrique in boucleRubriques({ "idRubrique" : 1 }) %}
+				<a href="catalogue/list">
+					<img class="lightsrcshot" src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(350,200) }}" alt="{{ rubrique.titre }}">
+					<span class="item-titre">{{ rubrique.titre }}</span>
+				</a>
+			{% endfor %}
+		</div>
+		<div class="block block-4-line span-9 prepend-1 last prepend-top item">
+			{% for rubrique in boucleRubriques({ "idRubrique" : 8 }) %}
+				<a href="services">
+					<img class="lightsrcshot" src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(350,200) }}" alt="{{ rubrique.titre }}">
+					<span class="item-titre">{{ rubrique.titre }}</span>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="block block-2-line span-20 prepend-2 last prepend-top append-bottom item">
+			{% for rubrique in boucleRubriques({ "idRubrique" : 9 }) %}
+				<a href="mercerie">
+					<img class="lightsrcshot" src="{{ image(rubrique.getPathAbsoluteLocalLogo()).crop(30,100,790,100) }}" alt="{{ rubrique.titre }}">
+					<span class="item-titre">{{ rubrique.titre }}</span>
+				</a>
+			{% endfor %}
+	</div>
+
+{% endblock %}

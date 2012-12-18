@@ -1,0 +1,69 @@
+.gradient-blue {
+	/* Anciens navigateurs */
+	background: #2A1A34;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Navigateurs récents */
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#2E9BDC),
+		to(midnightblue)
+	);
+	background: -webkit-radial-gradient(
+		top,
+		#43334E,
+		#2A1A34
+	);
+	background: -moz-radial-gradient(
+		top,
+		#2E9BDC,
+		midnightblue
+	);
+	background: -o-radial-gradient(
+		top,
+		#2E9BDC,
+		midnightblue
+	);
+	background: radial-gradient(
+		top,
+		#2E9BDC,
+		midnightblue
+	);
+}
+
+div.mercerie-list { 
+	overflow: hidden;
+}
+
+div.mercerie-list div.mercerie-item {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: solid white 1px;
+
+}
+
+
+div.mercerie-list div.mercerie-item h3.mercerie-titre {
+	color: #EEEEEE;
+	border: none;
+	padding-top: 35px;
+	text-align: center;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+div.mercerie-list div.mercerie-item div.mercerie-logo img {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+div.mercerie-list div.mercerie-item div.mercerie-logo {
+	background: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+

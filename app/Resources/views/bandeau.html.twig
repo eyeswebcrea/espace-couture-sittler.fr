@@ -1,0 +1,5 @@
+		    			<div class="span-22 last" id="bandeau">
+			    			 	{% for rubrique in boucleRubriques({ "idRubrique" : idRubriqueBandeau}) %}
+			    			 		<img class="ui-corner-bandeau" src="{{ image(rubrique.getPathAbsoluteLocalLogo()).resize(850,hauteurBandeau) }}">
+			    			 	{% endfor %}
+		    			</div>

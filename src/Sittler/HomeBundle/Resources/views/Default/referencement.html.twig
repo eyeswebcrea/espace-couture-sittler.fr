@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+	<div class="block span-20 prepend-2 append-2 last prepend-top append-bottom">
+		<h2 class="block-title">{{ article.titre }}</h2>
+		<div class="block-content">
+			{{ article.texte | raw }}
+		</div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+SittlerHomeBundle_homepage:
+    pattern:  /
+    defaults: { _controller:SittlerHomeBundle:Default:index }
+
+SittleHomeBundle_service:
+    pattern: /services
+    defaults: { _controller:SittlerHomeBundle:Default:viewPageService }
+
+SittleHomeBundle_contact:
+    pattern: /contact 
+    defaults: { _controller:SittlerHomeBundle:Default:viewPageContact }
+    
+SittlerHomeBundle_mercerie:
+    pattern: /mercerie
+    defaults: { _controller:SittlerHomeBundle:Default:viewPageMercerie }
+    
+

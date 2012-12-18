@@ -1,0 +1,48 @@
+_sitemap:
+    resource: @AvalancheSitemapBundle/Resources/config/routing.yml
+
+EyeswebcreaSecuserSpaceUserBundle:
+    resource: "@EyeswebcreaSecuserSpaceUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EyeswebcreaSecuserSpaceAdminBundle:
+    resource: "@EyeswebcreaSecuserSpaceAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+EyeswebcreaAliasContentEditorBundle:
+    resource: "@EyeswebcreaAliasContentEditorBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EyeswebcreaAssetServiceBundle:
+    resource: "@EyeswebcreaAssetServiceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EyeswebcreaReferencementBundle:
+    resource: "@EyeswebcreaReferencementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EyeswebcreaSliderBundle:
+    resource: "@EyeswebcreaSliderBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EyeswebcreaCatalogueBundle:
+    resource: "@EyeswebcreaCatalogueBundle/Resources/config/routing.yml"
+    prefix:   /catalogue
+    
+EyeswebcreaAdminCatalogueBundle:
+    resource: "@EyeswebcreaCatalogueBundle/Resources/config/Admin/routing.yml"
+    prefix:   /admin/catalogue
+
+SittlerHomeBundle:
+    resource: "@SittlerHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+SpipAccesContentBundle:
+    resource: "@SpipAccesContentBundle/Resources/config/routing.yml"
+    prefix: /spip
+

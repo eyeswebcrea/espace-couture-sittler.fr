@@ -1,0 +1,28 @@
+{% extends "::base.html.twig" %}
+
+{% block bandeau %} 
+	{% include "::bandeau.html.twig" with {"idRubriqueBandeau" : 9, "hauteurBandeau" : 300} %}
+{% endblock %}
+
+
+{% block stylesheets %}
+	    {% 
+        		stylesheets output='css/mercerie.css' 
+        		'@SittlerHomeBundle/Resources/public/css/mercerie.css'
+        %}        		
+        	<link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+        {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+	<div class="mercerie-list span-20 prepend-2 append-2 prepend-top append-bottom">
+		{% for article in boucleArticles({ "idRubrique" : 9 }) %}
+			<div class="mercerie-item gradient-blue span-9 {% if loop.index % 2 == 0 %}last{% else %}append-1{% endif %} prepend-top block block-2-line">
+				<div class="mercerie-logo span-3"><img src="{{ image(article.getPathAbsoluteLocalLogo()).resize(110,95) }}" alt="{{ article.titre }}"></div>
+				<div class="mercerie-conteneur-contenu span-6 last">
+					<h3 class="mercerie-titre">{{ article.titre }}</h3>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

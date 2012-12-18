@@ -1,0 +1,14 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets output='eyeswebcreasliderbundle.css'
+	'@EyeswebcreaSliderBundle/Resources/public/css/Default.css'
+  %}
+		<link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+  {% endstylesheets %} 
+{% endblock %}
+  
+{% block bandeau %}
+	{{ getSpipJquerySlider(10, { "width" : 850, "height" : 250, "texte": true, "texte_truncate": 100 }) | raw }}
+{% endblock %}

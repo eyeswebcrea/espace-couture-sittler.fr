@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+<div class="prepend-top">
+	<div class="span-20 prepend-2 prepend-top">
+	    <h1>Oops! Une erreur est apparu</h1>
+	    <h3>La page demandée n'existe pas ou n'existe plus.</h3>
+	    <h4> {{ exception.message }} </h4>
+	</div>
+</div>
+{% endblock %}
