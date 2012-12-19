@@ -1,5 +1,5 @@
 body {
-	background: #23132D url("/css/images/bg.jpg");
+	background: #23132D url("/images/bg.jpg");
 	background-repeat: repeat-x;
 }
 
@@ -75,7 +75,7 @@ h3 {
 }
 
 div#page {
-	background: url("/css/images/index_01.png");
+	background: url("/images/index_01.png");
 	margin: auto;
 	background-repeat: no-repeat;
 }
@@ -92,7 +92,7 @@ div#body {
 div#footer {
 	min-height: 312px;
 	padding-top: 15px;
-	background-image: url('/css/images/bg_footer.jpg');email-link"
+	background-image: url('/images/bg_footer.jpg');
 }
 
 .ui-corner-bandeau 
@@ -134,7 +134,7 @@ div#header div.menu ul li a {
 }
 
 
-div#header div.menu ul li:hover > a, div#header div.menu ul li.cuemail-link"rrent > a {
+div#header div.menu ul li:hover > a, div#header div.menu ul li.current > a {
 	background: #26172E;
 	color: white;
 }
@@ -167,7 +167,7 @@ div#header div.menu ul li:hover ul {
 div#header div.menu ul li ul li {
 	float: none;
 	background: #43334E;
-	list-style-image: url('/css/images/puce.gif')
+	list-style-image: url('/images/puce.gif')
 }
 
 div#header div.menu ul li ul li a {
@@ -219,24 +219,24 @@ div#bandeau {
 }
 
 div#conteneur-bas{
-	background: url('/css/images/index_bas/index_bas_decouper_milieu.jpg');
+	background: url('/images/index_bas/index_bas_decouper_milieu.jpg');
 	background-repeat: repeat-y;
 }
 
 div#conteneur-bas-partie-basse {
 	height: 29px; 
-	background: url('/css/images/index_bas/index_bas_decouper_bas.jpg');
+	background: url('/images/index_bas/index_bas_decouper_bas.jpg');
 	background-repeat: no-repeat;
 }
 
 div#conteneur-bas-partie-milieu {
-	background: url('/css/images/index_bas/index_bas_decouper_haut.jpg');
+	background: url('/images/index_bas/index_bas_decouper_haut.jpg');
 	background-repeat: no-repeat;
 	min-height: 332px;
 }
 
 div#conteneur-bandeau {
-	background-image: url("/css/images/index_haut.jpg");
+	background-image: url("/images/index_haut.jpg");
 	background-repeat: no-repeat;
 	min-height: 368px;
 	padding-top: 30px;
