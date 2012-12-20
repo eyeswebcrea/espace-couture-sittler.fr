@@ -68,6 +68,7 @@ eyeswebcrea_catalogue:
     keywork_categorie: 1
     keywork_produit: 2
     
+    
 eyeswebcrea_referencement:
     rubriqueId: 1
     article_manager: spip_acces_content.article_manager
