@@ -116,7 +116,7 @@ function req_sqlite_dist($addr, $port, $login, $pass, $db='', $prefixe='', $sqli
 function spip_sqlite_query($query, $serveur='',$requeter=true) {
 #spip_log("spip_sqlite_query() > $query");
 	_sqlite_init();
-	
+	//echo $query, '<br/><br/>';
 	$requete = new sqlite_traiter_requete($query, $serveur);
 	$requete->traduire_requete(); // mysql -> sqlite
 	if (!$requeter) return $requete->query;
@@ -742,7 +742,7 @@ function spip_sqlite_insert($table, $champs, $valeurs, $desc='', $serveur='',$re
 		include_spip('public/tracer');
 		$t = trace_query_start();
 	} else $t = 0 ;
- 
+echo 5555555555555; 
 	$query="INSERT INTO $table ".($champs?"$champs VALUES $valeurs":"DEFAULT VALUES");
 	
 	
